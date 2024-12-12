@@ -15,6 +15,18 @@
       });
     })(H5P.jQuery);
   </script>
+
+<script type="text/javascript">
+  (function($) {
+    $(function() {
+      $('.h5p-container').h5p({
+        frameJs: '../dist/js/h5p-standalone-frame.min.js',
+        frameCss: '../dist/styles/h5p.css',
+        h5pContent: '../workspace/content-example-2' <!-- Name of specific H5P content folder goes here -->
+      });
+    });
+  })(H5P.jQuery);
+</script>
 </head>
   <body>
     <div class="h5p-container"></div>
